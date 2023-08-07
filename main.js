@@ -17,7 +17,8 @@ function keyReturn(event){
 
 // Write a named function with event handler properties
 function sound(note){
-  addEventListener.note(mousedown, keyPlay)
+  note.addEventlistener(mousedown, keyPlay);
+  note.addEventlistener(mouseup, keyPlay);
 }
 
 // Write a loop that runs the array elements through the function
