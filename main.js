@@ -16,13 +16,13 @@ function keyReturn(event){
 };
 
 // Write a named function with event handler properties
-function sound(note){
+function assignEvents(note){
   note.addEventlistener(mousedown, keyPlay);
   note.addEventlistener(mouseup, keyPlay);
 };
 
 // Write a loop that runs the array elements through the function
-notes.forEach(sound());
+notes.forEach(assignEvents());
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
