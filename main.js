@@ -22,7 +22,7 @@ function assignEvents(note){
 };
 
 // Write a loop that runs the array elements through the function
-notes.forEach(assignEvents());
+notes.forEach(assignEvents);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
