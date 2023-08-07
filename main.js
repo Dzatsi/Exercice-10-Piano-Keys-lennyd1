@@ -9,17 +9,17 @@ keys.forEach(function(key){
 function keyPlay(event){
   const key = event.target;
   key.style.backgroundColor = "red";
-}
+};
 function keyReturn(event){
   const targetElement = event.target;
   targetElement.style.backgroundColor = '';
-}
+};
 
 // Write a named function with event handler properties
 function sound(note){
   note.addEventlistener(mousedown, keyPlay);
   note.addEventlistener(mouseup, keyPlay);
-}
+};
 
 // Write a loop that runs the array elements through the function
 notes.forEach(sound);
