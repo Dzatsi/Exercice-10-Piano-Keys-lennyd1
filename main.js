@@ -10,11 +10,14 @@ function keyPlay(event){
   const key = event.target;
   key.style.backgroundColor = "red";
 }
-
-// Write a named function with event handler properties
 function keyReturn(event){
   const targetElement = event.target;
   targetElement.style.backgroundColor = '';
+}
+
+// Write a named function with event handler properties
+function sound(note){
+  addEventListener.note(mousedown, keyPlay)
 }
 
 // Write a loop that runs the array elements through the function
