@@ -12,7 +12,10 @@ function keyPlay(event){
 }
 
 // Write a named function with event handler properties
-
+function keyReturn(event){
+  const targetElement = event.target;
+  targetElement.style.backgroundColor = '';
+}
 
 // Write a loop that runs the array elements through the function
 
