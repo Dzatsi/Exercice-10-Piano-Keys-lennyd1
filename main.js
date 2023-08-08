@@ -66,27 +66,19 @@ nextTwo.addEventListener('click', function() {
 nextThree.addEventListener('click', function(){
   startOver.hidden=false;
   nextThree.hidden=true;
-  document.querySelector('#word-one').innerHTML='HAP-'
-  document.querySelector('#word-two').innerText='PY'
-  document.querySelector('#word-three').innerText='BIRTH'
-  document.querySelectorAll('.lyrics__container')[0].querySelectorAll('.lyrics')[3].getElementsByTagName("span")[0].innerText=
-  "DAY"
-  let wordfive=document.querySelectorAll(".lyrics__container")[0].querySelectorAll(".lyrics")[4];
- 
-  wordfive.getElementsByTagName("span")[0].innerText ="TO"
-  let wordsix=document.querySelectorAll(".lyrics__container")[0]
-  .querySelectorAll(".lyrics")[5];
-  wordsix.getElementsByTagName("span")[0].innerText ="YOU!";
-
-document.querySelector('#letter-note-one').innerHTML='F'
-document.querySelector('#letter-note-two').innerHTML='F'
-document.querySelector('#letter-note-three').innerHTML='E'
-document.querySelector('#letter-note-four').innerHTML='C'
-document.querySelectorAll('.notes')[4].getElementsByTagName("li")[1].innerText="D"
-document.querySelectorAll('.notes')[4].getElementsByTagName("li")[2].innerText="C"
-
-let lastLyric = document.getElementById('slideIn');
-lastLyric.style.display = 'none';
+  document.getElementById('word-one').innerHTML='HAP-'
+  document.getElementById('word-two').innerText='PY'
+  document.getElementById('word-three').innerText='BIRTH'
+  document.getElementById('word-four').innerHTML = 'DAY'
+  document.getElementById('word-five').innerHTML = 'TO'
+  document.getElementById('word-six').innerHTML = 'YOU'
+  document.getElementById('letter-note-one').innerHTML = 'F'
+  document.getElementById('letter-note-two').innerHTML = 'F'
+  document.getElementById('letter-note-three').innerHTML = 'E'
+  document.getElementById('letter-note-four').innerHTML = 'C'
+  document.getElementById('letter-note-five').innerHTML = 'D'
+  document.getElementById('letter-note-six').innerHTML = 'C'
+  lastLyric.style.display = 'none';
 })
 
 // This is the event handler property and function for the startOver button
