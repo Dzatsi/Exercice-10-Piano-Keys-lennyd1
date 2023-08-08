@@ -10,7 +10,7 @@ console.log(keys);
 
 // Write named functions that change the color of the keys below
 function keyPlay(event){
-  event.target.style.backgroundColor = 'yellow';
+  event.target.style.backgroundColor = 'green';
 };
 function keyReturn(event){
   event.target.style.backgroundColor = '';
@@ -41,12 +41,22 @@ startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
 
+nextOne.addEventListener('click', function() {
+  nextTwo.hidden = false;
+  nextOne.hidden = true;
+});
 
 // Write anonymous event handler property and function for the second progress button
-
+nextTwo.addEventListener('click', function() {
+  nextThree.hidden = false;
+  nextTwo.hidden = true;
+})
 
 // Write anonymous event handler property and function for the third progress button
-
+nextThree.addEventListener('click', function(){
+  startOver.hidden=false;
+  nextThree.hidden=true;
+})
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
