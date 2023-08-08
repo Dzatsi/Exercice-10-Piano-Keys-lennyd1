@@ -44,12 +44,16 @@ startOver.hidden= true;
 nextOne.addEventListener('click', function() {
   nextTwo.hidden = false;
   nextOne.hidden = true;
+  document.getElementById('letter-note-five').textContent = 'D';
+  document.getElementById('letter-note-six').textContent = 'C';
 });
 
 // Write anonymous event handler property and function for the second progress button
 nextTwo.addEventListener('click', function() {
   nextThree.hidden = false;
   nextTwo.hidden = true;
+  document.getElementById('word-five').textContent = 'DEAR';
+  document.getElementById('word-six').textContent ='FRI-';
 })
 
 // Write anonymous event handler property and function for the third progress button
@@ -62,7 +66,7 @@ nextThree.addEventListener('click', function(){
 startOver.onclick = function() {
   nextOne.hidden = false;
   startOver.hidden = true;
-   document.getElementById('word-one').innerHTML = 'HAP-';
+  document.getElementById('word-one').innerHTML = 'HAP-';
   document.getElementById('letter-note-one').innerHTML = 'G';
   document.getElementById('word-two').innerHTML = 'PY';
   document.getElementById('letter-note-two').innerHTML = 'G';
