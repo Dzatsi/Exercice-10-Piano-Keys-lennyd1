@@ -54,12 +54,39 @@ nextTwo.addEventListener('click', function() {
   nextTwo.hidden = true;
   document.getElementById('word-five').textContent = 'DEAR';
   document.getElementById('word-six').textContent ='FRI-';
+  let lastLyric= document.getElementById("slideIn");
+  lastLyric.style.display="inline-block";
+  document.querySelector("#letter-note-three").innerHTML="G";
+  document.querySelector("#letter-note-four").innerHTML="E";
+  document.querySelector("#letter-note-five").innerHTML="C";
+  document.querySelector("#letter-note-six").innerHTML="B";
 })
 
 // Write anonymous event handler property and function for the third progress button
 nextThree.addEventListener('click', function(){
   startOver.hidden=false;
   nextThree.hidden=true;
+  document.querySelector('#word-one').innerHTML='HAP-'
+  document.querySelector('#word-two').innerText='PY'
+  document.querySelector('#word-three').innerText='BIRTH'
+  document.querySelectorAll('.lyrics__container')[0].querySelectorAll('.lyrics')[3].getElementsByTagName("span")[0].innerText=
+  "DAY"
+  let wordfive=document.querySelectorAll(".lyrics__container")[0].querySelectorAll(".lyrics")[4];
+ 
+  wordfive.getElementsByTagName("span")[0].innerText ="TO"
+  let wordsix=document.querySelectorAll(".lyrics__container")[0]
+  .querySelectorAll(".lyrics")[5];
+  wordsix.getElementsByTagName("span")[0].innerText ="YOU!";
+
+document.querySelector('#letter-note-one').innerHTML='F'
+document.querySelector('#letter-note-two').innerHTML='F'
+document.querySelector('#letter-note-three').innerHTML='E'
+document.querySelector('#letter-note-four').innerHTML='C'
+document.querySelectorAll('.notes')[4].getElementsByTagName("li")[1].innerText="D"
+document.querySelectorAll('.notes')[4].getElementsByTagName("li")[2].innerText="C"
+
+let lastLyric = document.getElementById('slideIn');
+lastLyric.style.display = 'none';
 })
 
 // This is the event handler property and function for the startOver button
