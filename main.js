@@ -54,12 +54,12 @@ nextTwo.addEventListener('click', function() {
   nextTwo.hidden = true;
   document.getElementById('word-five').textContent = 'DEAR';
   document.getElementById('word-six').textContent ='FRI-';
-  let lastLyric= document.getElementById("slideIn");
-  lastLyric.style.display="inline-block";
-  document.querySelector("#letter-note-three").innerHTML="G";
-  document.querySelector("#letter-note-four").innerHTML="E";
-  document.querySelector("#letter-note-five").innerHTML="C";
-  document.querySelector("#letter-note-six").innerHTML="B";
+  // let lastLyric= document.getElementById("slideIn");
+  lastLyric.style.display = "inline-block";
+  document.getElementById("letter-note-three").innerHTML="G";
+  document.getElementById("letter-note-four").innerHTML="E";
+  document.getElementById("letter-note-five").innerHTML="C";
+  document.getElementById("letter-note-six").innerHTML="B";
 })
 
 // Write anonymous event handler property and function for the third progress button
